@@ -1,0 +1,16 @@
+workloads:
+  - name: low
+    cloudlets: 100
+    vms: 50
+  - name: medium
+    cloudlets: 1000
+    vms: 150
+  - name: high
+    cloudlets: 10000
+    vms: 500
+priorities: {critical: 0.20, high: 0.30, medium: 0.30, low: 0.20}
+deadlines_ms: {critical: 300, high: 600, medium: 900, low: 1200}
+power_model:
+  max_power_w: 200.0
+  static_power_w: 120.0
+runs_per_combo: 30
